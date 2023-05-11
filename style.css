@@ -71,11 +71,14 @@
 .sobre {
     width:100%;
     height:100vh;
-    background-color: #D3D3D4;
+    background:
+    url(bg_eng.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .conteudo_sobre {
@@ -90,27 +93,25 @@
 .conteudo_sobre_titulo {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 65px;
     line-height: 1;
-    margin-top: 172px;
-    margin-bottom: 60px;
+    margin-top: 1px;
+    margin-bottom: 40px;
 }
 
 .conteudo_sobre_paragrafo {
     font-family: 'Slabo 27px', serif;
     inline-size: 440px;
+    font-size: 23px;
     text-align: justify;
     margin-bottom: 30px;
 }
 
 .conteudo_sobre_img {
     height: 100%;
-    width: 40%;
+    width: 30%;
     object-fit: cover;
-    position:absolute;
-	display:table;
-	top: 670px;
-	right:0px;
+    float: right;
 }
 
 .arrow-button {
@@ -167,4 +168,259 @@
 .arrow-button:hover {
     background-color: #031634;
     color: #fff;
+}
+
+.arquiteto {
+    width:100%;
+    height:100vh;
+    background-color: #0A142E;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo_arquiteto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.conteudo_arquiteto_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_arquiteto_titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #0464FF;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 1;
+    margin-top: 152px;
+    margin-bottom: 35px;
+    margin-left: 77px;
+}
+
+.conteudo_arquiteto_paragrafo {
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    inline-size: 440px;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 77px;
+}
+
+.conteudo_arquiteta_img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    margin-top: 153px;
+    border-radius: 32px;
+}
+
+.cientista_computação {
+    width:100%;
+    height:100vh;
+    background-color: #0A142E;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo_cientista_computação {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.conteudo_cientista_computação_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_cientista_computação_titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #0464FF;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 1;
+    margin-top: 152px;
+    margin-bottom: 35px;
+    margin-left: 77px;
+}
+
+.conteudo_cientista_computação_paragrafo {
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    inline-size: 440px;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 77px;
+}
+
+.conteudo_cientista_computação_img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    margin-top: 153px;
+    border-radius: 32px;
+}
+
+.engenheiro_mecanico {
+    width:100%;
+    height:100vh;
+    background-color: #0A142E;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo_engenheiro_mecanico {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.conteudo_engenheiro_mecanico_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_engenheiro_mecanico_titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #0464FF;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 1;
+    margin-top: 152px;
+    margin-bottom: 35px;
+    margin-left: 77px;
+}
+
+.conteudo_engenheiro_mecanico_paragrafo {
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    inline-size: 440px;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 77px;
+}
+
+.conteudo_engenheiro_mecanico_img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    margin-top: 153px;
+    border-radius: 32px;
+}
+
+.engenheiro_quimico {
+    width:100%;
+    height:100vh;
+    background-color: #0A142E;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo_engenheiro_quimico {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.conteudo_engenheiro_quimico_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_engenheiro_quimico_titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #0464FF;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 1;
+    margin-top: 152px;
+    margin-bottom: 35px;
+    margin-left: 77px;
+}
+
+.conteudo_engenheiro_quimico_paragrafo {
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    inline-size: 440px;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 77px;
+}
+
+.conteudo_engenheiro_quimico_img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    margin-top: 153px;
+    border-radius: 32px;
+}
+
+.urbanista {
+    width:100%;
+    height:100vh;
+    background-color: #0A142E;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo_urbanista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.conteudo_urbanista_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_urbanista_titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #0464FF;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 1;
+    margin-top: 152px;
+    margin-bottom: 35px;
+    margin-left: 77px;
+}
+
+.conteudo_urbanista_paragrafo {
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    inline-size: 440px;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 77px;
+}
+
+.conteudo_urbanista_img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    margin-top: 153px;
+    border-radius: 32px;
 }
