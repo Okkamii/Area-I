@@ -9,8 +9,8 @@
 }
 
 .capa {
-    width:100%;
-    height:100vh;
+    width:100vw;
+    height:196vw;
     background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url(bg_capa.jpg) no-repeat center center fixed; 
@@ -20,14 +20,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
-
-.botao_baixo {
-    width: 50px;
-    margin-bottom: 20px;
-    animation: jumping 1s linear infinite;
-    cursor: pointer;
+    align-items: center;
 }
 
 @keyframes jumping {
@@ -40,14 +33,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: #fff;
     flex-direction: column;
     text-align: center;
+    animation: jumping 2s linear infinite;
 }
 
 .conteudo_capa_pretitulo {
-    margin-top: 90px;
+    margin-top: 40vw;
     margin-bottom: 50px;
     font-family: 'Slabo 27px', serif;
     font-weight: normal;
@@ -57,28 +51,24 @@
 .conteudo_capa_titulo {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 180px;
+    font-size: 8vh;
 }
 
 .conteudo_capa_subtitulo {
     font-family: 'Slabo 27px', serif;
     font-weight: normal;
-    font-size: 29px;
+    font-size: 2.5vh;
     margin-bottom: 153px;
     margin-top: 0;
 }
 
 .sobre {
-    width:100%;
-    height:100vh;
-    background:
-    url(bg_eng.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    width:100vw;
+    height:196vw;
+    background-color: #D3D3D4;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .conteudo_sobre {
@@ -87,38 +77,30 @@
     justify-content: space-around;
     color: #000000;
     flex-direction: column;
-    margin-left: 77px;
 }
 
 .conteudo_sobre_titulo {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 65px;
+    font-size: 13vw;
     line-height: 1;
-    margin-top: 1px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .conteudo_sobre_paragrafo {
     font-family: 'Slabo 27px', serif;
-    inline-size: 440px;
-    font-size: 23px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
     margin-bottom: 30px;
-}
-
-.conteudo_sobre_img {
-    height: 100%;
-    width: 30%;
-    object-fit: cover;
-    float: right;
 }
 
 .arrow-button {
     font-family: 'Slabo 27px', serif;
     display: flex;
     color: #fff;
-    background-color: #033649;
+    background-color: #0A142E;
     padding: 10px 16px;
     border-radius: 20px;
     transition: all .3s ease;
@@ -171,256 +153,330 @@
 }
 
 .arquiteto {
-    width:100%;
-    height:100vh;
-    background-color: #0A142E;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width:100vw;
+    height:160vw;
 }
 
 .conteudo_arquiteto {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #000000;
-    align-items: center;
-}
-
-.conteudo_arquiteto_texto {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo_arquiteto_titulo {
     font-family: 'Oswald', sans-serif;
     color: #0464FF;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 15vw;
     line-height: 1;
-    margin-top: 152px;
+    margin-top: 50px;
     margin-bottom: 35px;
-    margin-left: 77px;
 }
 
 .conteudo_arquiteto_paragrafo {
     font-family: 'Slabo 27px', serif;
     color: white;
-    inline-size: 440px;
-    font-size: 25px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
-    margin-bottom: 0px;
-    margin-left: 77px;
+    margin-bottom: 50px;
 }
 
 .conteudo_arquiteta_img {
-    height: 375px;
-    width: 375px;
+    height: 50vw;
+    width: 75vw;
     object-fit: cover;
-    margin-top: 153px;
     border-radius: 32px;
+    z-index: 2;
+}
+.caixa1{
+    position: relative;
+    height: 50vw;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+}
+
+.caixa1::before, .caixa1::after {
+    content: '';
+    position: absolute;
+    width: 77vw;
+    height: 52vw;
+    background: linear-gradient(45deg, #3A1078, #3795BD, #4E31AA, #2F58CD);
+    background-size: 300%;
+    border-radius: 32px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.caixa1::after{
+    filter: blur(20vw);
+}
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 300%;
+    }
 }
 
 .cientista_computação {
-    width:100%;
-    height:100vh;
-    background-color: #0A142E;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width:100vw;
+    height:160vw;
 }
 
 .conteudo_cientista_computação {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #000000;
-    align-items: center;
-}
-
-.conteudo_cientista_computação_texto {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo_cientista_computação_titulo {
     font-family: 'Oswald', sans-serif;
     color: #0464FF;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 15vw;
     line-height: 1;
-    margin-top: 152px;
+    margin-top: 50px;
     margin-bottom: 35px;
-    margin-left: 77px;
 }
 
 .conteudo_cientista_computação_paragrafo {
     font-family: 'Slabo 27px', serif;
     color: white;
-    inline-size: 440px;
-    font-size: 25px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
-    margin-bottom: 0px;
-    margin-left: 77px;
+    margin-bottom: 50px;
 }
 
 .conteudo_cientista_computação_img {
-    height: 375px;
-    width: 375px;
+    height: 50vw;
+    width: 75vw;
     object-fit: cover;
-    margin-top: 153px;
     border-radius: 32px;
+    z-index: 2;
+}
+.caixa2{
+    position: relative;
+    height: 50vw;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
 }
 
+.caixa2::before, .caixa2::after {
+    content: '';
+    position: absolute;
+    width: 77vw;
+    height: 52vw;
+    background: linear-gradient(45deg, #3A1078, #3795BD, #4E31AA, #2F58CD);
+    background-size: 300%;
+    border-radius: 32px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.caixa2::after{
+    filter: blur(20vw);
+}
 .engenheiro_mecanico {
-    width:100%;
-    height:100vh;
-    background-color: #0A142E;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width:100vw;
+    height:160vw;
 }
 
 .conteudo_engenheiro_mecanico {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #000000;
-    align-items: center;
-}
-
-.conteudo_engenheiro_mecanico_texto {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo_engenheiro_mecanico_titulo {
     font-family: 'Oswald', sans-serif;
     color: #0464FF;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 15vw;
     line-height: 1;
-    margin-top: 152px;
+    margin-top: 50px;
     margin-bottom: 35px;
-    margin-left: 77px;
 }
 
 .conteudo_engenheiro_mecanico_paragrafo {
     font-family: 'Slabo 27px', serif;
     color: white;
-    inline-size: 440px;
-    font-size: 25px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
-    margin-bottom: 0px;
-    margin-left: 77px;
+    margin-bottom: 50px;
 }
 
 .conteudo_engenheiro_mecanico_img {
-    height: 375px;
-    width: 375px;
+    height: 50vw;
+    width: 75vw;
     object-fit: cover;
-    margin-top: 153px;
     border-radius: 32px;
+    z-index: 2;
+}
+
+.caixa3{
+    position: relative;
+    height: 50vw;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+}
+
+.caixa3::before, .caixa3::after {
+    content: '';
+    position: absolute;
+    width: 77vw;
+    height: 52vw;
+    background: linear-gradient(45deg, #3A1078, #3795BD, #4E31AA, #2F58CD);
+    background-size: 300%;
+    border-radius: 32px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.caixa3::after{
+    filter: blur(20vw);
 }
 
 .engenheiro_quimico {
-    width:100%;
-    height:100vh;
-    background-color: #0A142E;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    height:160vw;
 }
 
 .conteudo_engenheiro_quimico {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #000000;
-    align-items: center;
-}
-
-.conteudo_engenheiro_quimico_texto {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo_engenheiro_quimico_titulo {
     font-family: 'Oswald', sans-serif;
     color: #0464FF;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 15vw;
     line-height: 1;
-    margin-top: 152px;
+    margin-top: 50px;
     margin-bottom: 35px;
-    margin-left: 77px;
 }
 
 .conteudo_engenheiro_quimico_paragrafo {
     font-family: 'Slabo 27px', serif;
     color: white;
-    inline-size: 440px;
-    font-size: 25px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
-    margin-bottom: 0px;
-    margin-left: 77px;
+    margin-bottom: 50px;
 }
 
 .conteudo_engenheiro_quimico_img {
-    height: 375px;
-    width: 375px;
+    height: 50vw;
+    width: 75vw;
     object-fit: cover;
-    margin-top: 153px;
     border-radius: 32px;
+    z-index: 2;
+}
+
+.caixa4{
+    position: relative;
+    height: 50vw;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+}
+
+.caixa4::before, .caixa4::after {
+    content: '';
+    position: absolute;
+    width: 77vw;
+    height: 52vw;
+    background: linear-gradient(45deg, #3A1078, #3795BD, #4E31AA, #2F58CD);
+    background-size: 300%;
+    border-radius: 32px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.caixa4::after{
+    filter: blur(20vw);
 }
 
 .urbanista {
-    width:100%;
-    height:100vh;
-    background-color: #0A142E;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width:100vw;
+    height:170vw;
 }
 
 .conteudo_urbanista {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #000000;
-    align-items: center;
-}
-
-.conteudo_urbanista_texto {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo_urbanista_titulo {
     font-family: 'Oswald', sans-serif;
     color: #0464FF;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 15vw;
     line-height: 1;
-    margin-top: 152px;
+    margin-top: 50px;
     margin-bottom: 35px;
-    margin-left: 77px;
 }
 
 .conteudo_urbanista_paragrafo {
     font-family: 'Slabo 27px', serif;
     color: white;
-    inline-size: 440px;
-    font-size: 25px;
+    inline-size: 75vw;
+    font-size: 5vw;
     text-align: justify;
-    margin-bottom: 0px;
-    margin-left: 77px;
+    margin-bottom: 50px;
 }
 
 .conteudo_urbanista_img {
-    height: 375px;
-    width: 375px;
+    height: 50vw;
+    width: 90vw;
     object-fit: cover;
-    margin-top: 153px;
     border-radius: 32px;
+    z-index: 2;
+}
+
+.caixa5{
+    position: relative;
+    height: 50vw;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+}
+
+.caixa5::before, .caixa5::after {
+    content: '';
+    position: absolute;
+    width: 77vw;
+    height: 52vw;
+    background: linear-gradient(45deg, #3A1078, #3795BD, #4E31AA, #2F58CD);
+    background-size: 300%;
+    border-radius: 32px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.caixa5::after{
+    filter: blur(20vw);
+}
+
+.cursoss {
+    background: #0A142E;
 }
